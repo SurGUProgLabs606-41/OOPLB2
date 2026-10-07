@@ -15,7 +15,17 @@ private:
     double maxFuel;
 
 public:
+    // Конструктор без параметров
+    Vehicle();
 
+    // Параметризованный конструктор
+    Vehicle(const string& brand, double speed, double fuel, double maxFuel, bool engineState);
+
+    // Конструктор копирования
+    Vehicle(const Vehicle& other);
+
+    // Деструктор
+    ~Vehicle();
 };
 
 #endif
