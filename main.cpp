@@ -39,5 +39,40 @@ int main()
 
     car2.print();
 
+    // Некорректные операции
+    cout << "\n=== Некорректные операции ===\n";
+
+    car1.accelerate(30);
+    car2.refuel(100);
+    car2.brake(-10);
+    car2.accelerate(-20);
+
+    // Проверка состояния после ошибок
+    cout << "\n=== Состояние после ошибок ===\n";
+
+    car2.print();
+
+    // Проверка независимости объектов
+    cout << "\n=== Проверка независимости объектов ===\n";
+
+    cout << "\nИзменяем car1...\n";
+
+    car1.refuel(20);
+    car1.startEngine();
+    car1.accelerate(30);
+
+    cout << "\nCar1:";
+    car1.print();
+
+    cout << "\nCar2:";
+    car2.print();
+
+    cout << "\nCar3:";
+    car3.print();
+
+    // Количество объектов
+    cout << "\nКоличество объектов: "
+         << Vehicle::getObjectCount() << "\n";
+
     return 0;
 }

@@ -21,7 +21,8 @@ public:
     Vehicle();
 
     // Параметризованный конструктор
-    Vehicle(const string& brand, double speed, double fuel, double maxFuel, bool engineState);
+    Vehicle(const string& brand, double speed,
+            double fuel, double maxFuel, bool engineState);
 
     // Конструктор копирования
     Vehicle(const Vehicle& other);
