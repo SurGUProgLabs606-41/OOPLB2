@@ -14,5 +14,8 @@ int main()
     // Создание автомобиля с помощью конструктора копирования
     Vehicle car3(car2);
 
+    cout << "Количество объектов: "
+         << Vehicle::getObjectCount() << "\n";
+
     return 0;
 }
