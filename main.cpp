@@ -17,5 +17,13 @@ int main()
     cout << "Количество объектов: "
          << Vehicle::getObjectCount() << "\n";
 
+    // Корректные операции
+    cout << "\n=== Корректные операции ===\n";
+
+    car2.startEngine();
+    car2.accelerate(50);
+    car2.brake(20);
+    car2.refuel(10);
+
     return 0;
 }

@@ -21,8 +21,7 @@ public:
     Vehicle();
 
     // Параметризованный конструктор
-    Vehicle(const string& brand, double speed,
-            double fuel, double maxFuel, bool engineState);
+    Vehicle(const string& brand, double speed, double fuel, double maxFuel, bool engineState);
 
     // Конструктор копирования
     Vehicle(const Vehicle& other);
@@ -32,6 +31,13 @@ public:
 
     // Статический метод
     static int getObjectCount();
+
+    // Методы изменения состояния
+    bool startEngine();
+    bool stopEngine();
+    bool accelerate(double value);
+    bool brake(double value);
+    bool refuel(double amount);
 };
 
 #endif
