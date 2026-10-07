@@ -1,0 +1,5 @@
+g++ main.cpp Vehicle.cpp -o main
+./main
+
+Запуск UML-диаграмм
+option + D
