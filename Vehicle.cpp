@@ -56,6 +56,27 @@ Vehicle::~Vehicle()
     objectCount--;
 }
 
+// Методы получения
+string Vehicle::getBrand() const
+{
+    return brand;
+}
+
+double Vehicle::getSpeed() const
+{
+    return speed;
+}
+
+double Vehicle::getFuel() const
+{
+    return fuel;
+}
+
+bool Vehicle::isEngineRunning() const
+{
+    return engineState;
+}
+
 int Vehicle::getObjectCount()
 {
     return objectCount;
@@ -173,4 +194,19 @@ bool Vehicle::refuel(double amount)
     fuel += amount;
 
     return true;
+}
+
+// Вывод информации
+void Vehicle::print() const
+{
+    cout << "\n--- Автомобиль ---\n";
+    cout << "Марка: " << brand << '\n';
+    cout << "Скорость: " << speed << " км/ч\n";
+    cout << "Топливо: " << fuel << " л\n";
+    cout << "Максимальный объём бака: " << maxFuel << " л\n";
+
+    if (engineState == true)
+        cout << "Двигатель: включен\n";
+    else
+        cout << "Двигатель: выключен\n";
 }
