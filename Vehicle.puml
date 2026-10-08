@@ -1,0 +1,41 @@
+@startuml
+
+class Vehicle
+{
+    - brand : string
+    - speed : double
+    - fuel : double
+    - engineState : bool
+    - maxFuel : double
+    - objectCount : int {static}
+
+    + Vehicle()
+    + Vehicle(brand : string, speed : double, fuel : double, maxFuel : double, engineState : bool)
+    + Vehicle(other : Vehicle)
+    + ~Vehicle()
+
+    + getBrand() : string
+    + getSpeed() : double
+    + getFuel() : double
+    + isEngineRunning() : bool
+    + getObjectCount() : int {static}
+
+    + startEngine() : bool
+    + stopEngine() : bool
+    + accelerate(value : double) : bool
+    + brake(value : double) : bool
+    + refuel(amount : double) : bool
+    + print() : void
+}
+
+object "car1 : Vehicle" as car1
+object "car2 : Vehicle" as car2
+object "car3 : Vehicle" as car3
+
+car1 --> Vehicle : создаётся\nконструктором по умолчанию
+car2 --> Vehicle : создаётся\nпараметризованным конструктором
+car3 --> Vehicle : создаётся\nконструктором копирования
+
+car3 ..> car2 : копирование
+
+@enduml

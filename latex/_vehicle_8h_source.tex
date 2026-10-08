@@ -1,0 +1,60 @@
+\doxysection{Vehicle.\+h}
+\hypertarget{_vehicle_8h_source}{}\label{_vehicle_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ VEHICLE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ VEHICLE\_H}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ Файл\ объявления\ класса\ Vehicle.}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_vehicle_abaad8187d9f2ede4fb8ea18de0a6764c}{Vehicle}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{string}\ brand;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{double}\ speed;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{double}\ fuel;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ engineState;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{double}\ maxFuel;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ objectCount;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00045\ \ \ \ \ \doxymbox{\hyperlink{class_vehicle_abaad8187d9f2ede4fb8ea18de0a6764c}{Vehicle}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00058\ \ \ \ \ \doxymbox{\hyperlink{class_vehicle_abaad8187d9f2ede4fb8ea18de0a6764c}{Vehicle}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ brand,\ \textcolor{keywordtype}{double}\ speed,\ \textcolor{keywordtype}{double}\ fuel,\ \textcolor{keywordtype}{double}\ maxFuel,\ \textcolor{keywordtype}{bool}\ engineState);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00067\ \ \ \ \ \doxymbox{\hyperlink{class_vehicle_abaad8187d9f2ede4fb8ea18de0a6764c}{Vehicle}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_vehicle_abaad8187d9f2ede4fb8ea18de0a6764c}{Vehicle}}\&\ other);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00072\ \ \ \ \ \doxymbox{\hyperlink{class_vehicle_abaad8187d9f2ede4fb8ea18de0a6764c}{\string~Vehicle}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_vehicle_a6d5f105e83177b3738a639e4e613218f}{getBrand}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_vehicle_aaa4e63bb3da1f9c6d29d858af5c02360}{getSpeed}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_vehicle_a6e4f7a666235ae5b5f8d669dbe58ba7c}{getFuel}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_vehicle_a328bcdb8eb5aeeb47ba716268d56f696}{isEngineRunning}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_vehicle_a4becc63eb56b66f7f8cde66347ddef50}{getObjectCount}}();}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_vehicle_a3b8f865832df6306f253904ff8a6dd4d}{startEngine}}();}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_vehicle_ab10e4233e5c1073959fa282bab959987}{stopEngine}}();}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_vehicle_a5769c3e6162a249762fd7315702766e8}{accelerate}}(\textcolor{keywordtype}{double}\ value);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_vehicle_a0a3bbbdc00a457fb14598d0eb289b3da}{brake}}(\textcolor{keywordtype}{double}\ value);}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_vehicle_a45510b8786a76fa5e0c6cdee6424d9b2}{refuel}}(\textcolor{keywordtype}{double}\ amount);}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00154\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_vehicle_adf4abf251066dc89dffdfede46fb26ce}{print}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00155\ \};}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

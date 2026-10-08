@@ -3,3 +3,6 @@ g++ main.cpp Vehicle.cpp -o main
 
 Запуск UML-диаграмм
 option + D
+
+doxygen Doxyfile // Собрать документ
+open docs/html/index.html // Запуск

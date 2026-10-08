@@ -1,0 +1,357 @@
+\doxysection{Vehicle Class Reference}
+\hypertarget{class_vehicle}{}\label{class_vehicle}\index{Vehicle@{Vehicle}}
+
+
+Класс для представления автомобиля.  
+
+
+
+
+{\ttfamily \+\#include $<$Vehicle.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_vehicle_abaad8187d9f2ede4fb8ea18de0a6764c}{Vehicle}} ()
+\begin{DoxyCompactList}\small\item\em \+[5] Конструктор без параметров. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_vehicle_aeac1cd3a6a7cd6d36a7d61bdd947a750}{Vehicle}} (const string \&brand, double speed, double fuel, double max\+Fuel, bool engine\+State)
+\begin{DoxyCompactList}\small\item\em \+[6] Параметризованный конструктор. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_vehicle_aa0dcdc0b6ef3ed468feb6a40166daaac}{Vehicle}} (const \doxymbox{\hyperlink{class_vehicle}{Vehicle}} \&other)
+\begin{DoxyCompactList}\small\item\em \+[7] Конструктор копирования. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_vehicle_a61ab140c755b8e0e824d54117cf4546f}{\texorpdfstring{$\sim$}{\string~}\+Vehicle}} ()
+\begin{DoxyCompactList}\small\item\em \+[16] Явно объявленный деструктор. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_vehicle_a6d5f105e83177b3738a639e4e613218f}{get\+Brand}} () const
+\begin{DoxyCompactList}\small\item\em \+[9] Возвращает марку автомобиля. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_vehicle_aaa4e63bb3da1f9c6d29d858af5c02360}{get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em \+[9] Возвращает скорость автомобиля. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_vehicle_a6e4f7a666235ae5b5f8d669dbe58ba7c}{get\+Fuel}} () const
+\begin{DoxyCompactList}\small\item\em \+[9] Возвращает количество топлива. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_vehicle_a328bcdb8eb5aeeb47ba716268d56f696}{is\+Engine\+Running}} () const
+\begin{DoxyCompactList}\small\item\em \+[9] Проверяет состояние двигателя. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_vehicle_a3b8f865832df6306f253904ff8a6dd4d}{start\+Engine}} ()
+\begin{DoxyCompactList}\small\item\em \+[11] Запускает двигатель автомобиля. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_vehicle_ab10e4233e5c1073959fa282bab959987}{stop\+Engine}} ()
+\begin{DoxyCompactList}\small\item\em \+[11] Останавливает двигатель автомобиля. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_vehicle_a5769c3e6162a249762fd7315702766e8}{accelerate}} (double value)
+\begin{DoxyCompactList}\small\item\em \+[11] Увеличивает скорость автомобиля. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_vehicle_a0a3bbbdc00a457fb14598d0eb289b3da}{brake}} (double value)
+\begin{DoxyCompactList}\small\item\em \+[11] Уменьшает скорость автомобиля. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_vehicle_a45510b8786a76fa5e0c6cdee6424d9b2}{refuel}} (double amount)
+\begin{DoxyCompactList}\small\item\em \+[11] Заправляет автомобиль. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_vehicle_adf4abf251066dc89dffdfede46fb26ce}{print}} () const
+\begin{DoxyCompactList}\small\item\em \+[15] Выводит информацию об автомобиле. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \doxymbox{\hyperlink{class_vehicle_a4becc63eb56b66f7f8cde66347ddef50}{get\+Object\+Count}} ()
+\begin{DoxyCompactList}\small\item\em \+[21] Возвращает количество существующих объектов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для представления автомобиля. 
+
+\+[1] Класс содержит несколько полей разных типов. Требование о поле пользовательского типа требует отдельного класса. \+[2] Используются типы string, double и bool. \+[3] Все поля класса объявлены private. \+[4] Для получения состояния автомобиля предусмотрены публичные методы. 
+
+\label{class_vehicle_doc-constructors}
+\Hypertarget{class_vehicle_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_vehicle_abaad8187d9f2ede4fb8ea18de0a6764c}\index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
+\index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{Vehicle()}{Vehicle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_vehicle_abaad8187d9f2ede4fb8ea18de0a6764c} 
+Vehicle::\+\+Vehicle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\+[5] Конструктор без параметров. 
+
+Создаёт автомобиль с корректным начальным состоянием.
+
+\+[13] Объект создаётся сразу с корректным состоянием. \Hypertarget{class_vehicle_aeac1cd3a6a7cd6d36a7d61bdd947a750}\index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
+\index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{Vehicle()}{Vehicle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_vehicle_aeac1cd3a6a7cd6d36a7d61bdd947a750} 
+Vehicle::\+\+Vehicle (\begin{DoxyParamCaption}\item[{const string \&}]{brand}{, }\item[{double}]{speed}{, }\item[{double}]{fuel}{, }\item[{double}]{max\+Fuel}{, }\item[{bool}]{engine\+State}{}\end{DoxyParamCaption})}
+
+
+
+\+[6] Параметризованный конструктор. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em brand} & Марка автомобиля. \\
+\hline
+{\em speed} & Начальная скорость. \\
+\hline
+{\em fuel} & Начальное количество топлива. \\
+\hline
+{\em max\+Fuel} & Максимальный объём бака. \\
+\hline
+{\em engine\+State} & Начальное состояние двигателя.\\
+\hline
+\end{DoxyParams}
+\+[8] Реализация конструктора использует список инициализации.
+
+\+[8] Используется список инициализации.
+
+\+[13] Проверяется корректность переданных значений.
+
+
+\begin{DoxyParams}{Parameters}
+{\em brand} & Марка автомобиля. \\
+\hline
+{\em speed} & Начальная скорость. \\
+\hline
+{\em fuel} & Начальное количество топлива. \\
+\hline
+{\em max\+Fuel} & Максимальный объём бака. \\
+\hline
+{\em engine\+State} & Состояние двигателя. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_vehicle_aa0dcdc0b6ef3ed468feb6a40166daaac}\index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
+\index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{Vehicle()}{Vehicle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_vehicle_aa0dcdc0b6ef3ed468feb6a40166daaac} 
+Vehicle::\+\+Vehicle (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_vehicle}{Vehicle}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+\+[7] Конструктор копирования. 
+
+Используется как третий способ создания объекта.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Объект для копирования.\\
+\hline
+\end{DoxyParams}
+Создаёт независимую копию другого объекта.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Объект для копирования. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_vehicle_a61ab140c755b8e0e824d54117cf4546f}\index{Vehicle@{Vehicle}!````~Vehicle@{\texorpdfstring{$\sim$}{\string~}Vehicle}}
+\index{````~Vehicle@{\texorpdfstring{$\sim$}{\string~}Vehicle}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Vehicle()}{\string~Vehicle()}}
+{\footnotesize\ttfamily \label{class_vehicle_a61ab140c755b8e0e824d54117cf4546f} 
+Vehicle::\+\texorpdfstring{$\sim$}{\string~}\+Vehicle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\+[16] Явно объявленный деструктор. 
+
+\+[16] Деструктор.
+
+\+[21] При уничтожении объекта счётчик уменьшается. 
+
+\label{class_vehicle_doc-func-members}
+\Hypertarget{class_vehicle_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_vehicle_a5769c3e6162a249762fd7315702766e8}\index{Vehicle@{Vehicle}!accelerate@{accelerate}}
+\index{accelerate@{accelerate}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{accelerate()}{accelerate()}}
+{\footnotesize\ttfamily \label{class_vehicle_a5769c3e6162a249762fd7315702766e8} 
+bool Vehicle::\+accelerate (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+\+[11] Увеличивает скорость автомобиля. 
+
+\+[11]\+[13] Увеличивает скорость автомобиля.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Величина увеличения скорости. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true при успешной операции, иначе false.
+\end{DoxyReturn}
+\+[13] Проверяется корректность операции и наличие топлива.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Величина увеличения скорости. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true при успешной операции, иначе false. 
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_a0a3bbbdc00a457fb14598d0eb289b3da}\index{Vehicle@{Vehicle}!brake@{brake}}
+\index{brake@{brake}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{brake()}{brake()}}
+{\footnotesize\ttfamily \label{class_vehicle_a0a3bbbdc00a457fb14598d0eb289b3da} 
+bool Vehicle::\+brake (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+\+[11] Уменьшает скорость автомобиля. 
+
+\+[11]\+[13] Уменьшает скорость автомобиля.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Величина уменьшения скорости. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true при успешной операции, иначе false. 
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_a6d5f105e83177b3738a639e4e613218f}\index{Vehicle@{Vehicle}!getBrand@{getBrand}}
+\index{getBrand@{getBrand}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{getBrand()}{getBrand()}}
+{\footnotesize\ttfamily \label{class_vehicle_a6d5f105e83177b3738a639e4e613218f} 
+string Vehicle::\+get\+Brand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+\+[9] Возвращает марку автомобиля. 
+
+\begin{DoxyReturn}{Returns}
+Марка автомобиля. 
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_a6e4f7a666235ae5b5f8d669dbe58ba7c}\index{Vehicle@{Vehicle}!getFuel@{getFuel}}
+\index{getFuel@{getFuel}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{getFuel()}{getFuel()}}
+{\footnotesize\ttfamily \label{class_vehicle_a6e4f7a666235ae5b5f8d669dbe58ba7c} 
+double Vehicle::\+get\+Fuel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+\+[9] Возвращает количество топлива. 
+
+\begin{DoxyReturn}{Returns}
+Количество топлива. 
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_a4becc63eb56b66f7f8cde66347ddef50}\index{Vehicle@{Vehicle}!getObjectCount@{getObjectCount}}
+\index{getObjectCount@{getObjectCount}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{getObjectCount()}{getObjectCount()}}
+{\footnotesize\ttfamily \label{class_vehicle_a4becc63eb56b66f7f8cde66347ddef50} 
+int Vehicle::\+get\+Object\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\+[21] Возвращает количество существующих объектов. 
+
+\begin{DoxyReturn}{Returns}
+Количество объектов \doxylink{class_vehicle}{Vehicle}. 
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_aaa4e63bb3da1f9c6d29d858af5c02360}\index{Vehicle@{Vehicle}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily \label{class_vehicle_aaa4e63bb3da1f9c6d29d858af5c02360} 
+double Vehicle::\+get\+Speed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+\+[9] Возвращает скорость автомобиля. 
+
+\begin{DoxyReturn}{Returns}
+Скорость автомобиля. 
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_a328bcdb8eb5aeeb47ba716268d56f696}\index{Vehicle@{Vehicle}!isEngineRunning@{isEngineRunning}}
+\index{isEngineRunning@{isEngineRunning}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{isEngineRunning()}{isEngineRunning()}}
+{\footnotesize\ttfamily \label{class_vehicle_a328bcdb8eb5aeeb47ba716268d56f696} 
+bool Vehicle::\+is\+Engine\+Running (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+\+[9] Проверяет состояние двигателя. 
+
+\+[9]\+[10] Проверяет состояние двигателя.
+
+\begin{DoxyReturn}{Returns}
+true, если двигатель включен, иначе false.
+\end{DoxyReturn}
+\+[10] Метод не изменяет объект и объявлен const.
+
+\begin{DoxyReturn}{Returns}
+true, если двигатель включен, иначе false. 
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_adf4abf251066dc89dffdfede46fb26ce}\index{Vehicle@{Vehicle}!print@{print}}
+\index{print@{print}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_vehicle_adf4abf251066dc89dffdfede46fb26ce} 
+void Vehicle::\+print (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+\+[15] Выводит информацию об автомобиле. 
+
+\+[10] Метод не изменяет объект и объявлен const.
+
+\+[10] Метод объявлен const, так как не изменяет состояние объекта. \Hypertarget{class_vehicle_a45510b8786a76fa5e0c6cdee6424d9b2}\index{Vehicle@{Vehicle}!refuel@{refuel}}
+\index{refuel@{refuel}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{refuel()}{refuel()}}
+{\footnotesize\ttfamily \label{class_vehicle_a45510b8786a76fa5e0c6cdee6424d9b2} 
+bool Vehicle::\+refuel (\begin{DoxyParamCaption}\item[{double}]{amount}{}\end{DoxyParamCaption})}
+
+
+
+\+[11] Заправляет автомобиль. 
+
+\+[11]\+[13] Заправляет автомобиль.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Количество топлива. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true при успешной заправке, иначе false.
+\end{DoxyReturn}
+\+[13] Проверяется максимальный объём топливного бака.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Количество топлива. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true при успешной заправке, иначе false. 
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_a3b8f865832df6306f253904ff8a6dd4d}\index{Vehicle@{Vehicle}!startEngine@{startEngine}}
+\index{startEngine@{startEngine}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{startEngine()}{startEngine()}}
+{\footnotesize\ttfamily \label{class_vehicle_a3b8f865832df6306f253904ff8a6dd4d} 
+bool Vehicle::\+start\+Engine (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\+[11] Запускает двигатель автомобиля. 
+
+\+[11]\+[13] Запускает двигатель автомобиля.
+
+\begin{DoxyReturn}{Returns}
+true при успешном запуске, иначе false.
+\end{DoxyReturn}
+Двигатель нельзя запустить, если он уже работает или отсутствует топливо.
+
+\begin{DoxyReturn}{Returns}
+true при успешном запуске, иначе false. 
+\end{DoxyReturn}
+\Hypertarget{class_vehicle_ab10e4233e5c1073959fa282bab959987}\index{Vehicle@{Vehicle}!stopEngine@{stopEngine}}
+\index{stopEngine@{stopEngine}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{stopEngine()}{stopEngine()}}
+{\footnotesize\ttfamily \label{class_vehicle_ab10e4233e5c1073959fa282bab959987} 
+bool Vehicle::\+stop\+Engine (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\+[11] Останавливает двигатель автомобиля. 
+
+\+[11]\+[13] Останавливает двигатель автомобиля.
+
+\begin{DoxyReturn}{Returns}
+true при успешной остановке, иначе false. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Vehicle.\+h\item 
+Vehicle.\+cpp\end{DoxyCompactItemize}
