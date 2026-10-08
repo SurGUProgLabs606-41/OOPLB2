@@ -17,7 +17,8 @@ Vehicle::Vehicle()
 }
 
 // Параметризованный конструктор
-Vehicle::Vehicle(const string& brand, double speed, double fuel, double maxFuel, bool engineState)
+Vehicle::Vehicle(const string& brand, double speed,
+                 double fuel, double maxFuel, bool engineState)
     : brand(brand),
       speed(speed),
       fuel(fuel),
@@ -35,6 +36,9 @@ Vehicle::Vehicle(const string& brand, double speed, double fuel, double maxFuel,
 
     if (fuel > this->maxFuel)
         this->fuel = this->maxFuel;
+
+    if (this->fuel <= 0)
+        this->engineState = false;
 
     objectCount++;
 }
